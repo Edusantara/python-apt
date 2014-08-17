@@ -1,0 +1,44 @@
+ChangelogURI: http://arsip-dev.blankonlinux.or.id/blankon/changelogs/pool/%s/%s/%s/%s_%s/changelog
+
+Suite: edusantara
+RepositoryType: deb
+BaseURI: http://118.98.166.45/edusantara
+MatchURI: http://118.98.166.45/edusantara
+MirrorsFile-amd64: /usr/share/python-apt/templates/Edusantara.mirrors
+MirrorsFile-i386: /usr/share/python-apt/templates/Edusantara.mirrors
+Description: Edusantara 1.0 'Anambas'
+Component: main
+CompDescription: Officially supported
+CompDescriptionLong: Edusantara-supported Free/Open Source software
+Component: extras
+CompDescription: Community-maintained
+CompDescriptionLong: Community-maintained Free/Open Source software
+Component: restricted
+CompDescription: Non-free drivers
+CompDescriptionLong: Proprietary drivers for devices
+Component: extras-restricted
+CompDescription: Restricted software
+CompDescriptionLong: Software restricted by copyright or legal issues
+
+Suite: edusantara
+MatchName: .*
+BaseURI: cdrom:\[Edusantara.*1.0
+MatchURI: cdrom:\[Edusantara.*1.0
+Description: CDROM with Edusantara 1.0 'Anambas' 
+Available: False
+Component: main
+CompDescription: Officially supported
+Component: restricted
+CompDescription: Restricted copyright
+
+Suite: edusantara-security
+ParentSuite: edusantara
+RepositoryType: deb
+BaseURI: http://118.98.166.45/edusantara
+MatchURI: http://118.98.166.45/edusantara
+Description: Important security updates
+
+Suite: edusantara-updates
+ParentSuite: edusantara
+RepositoryType: deb
+Description: Recommended updates
